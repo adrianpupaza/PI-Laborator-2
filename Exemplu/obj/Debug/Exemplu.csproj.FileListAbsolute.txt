@@ -1,0 +1,16 @@
+C:\Users\Perfi\Per\Doc\Prel_Img\Prel Imag 2013\Exemplu\Exemplu\bin\Debug\Exemplu.exe
+C:\Users\Perfi\Per\Doc\Prel_Img\Prel Imag 2013\Exemplu\Exemplu\bin\Debug\Exemplu.pdb
+C:\Users\Perfi\Per\Doc\Prel_Img\Prel Imag 2013\Exemplu\Exemplu\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Perfi\Per\Doc\Prel_Img\Prel Imag 2013\Exemplu\Exemplu\obj\Debug\Exemplu.Exemplu.resources
+C:\Users\Perfi\Per\Doc\Prel_Img\Prel Imag 2013\Exemplu\Exemplu\obj\Debug\Exemplu.Properties.Resources.resources
+C:\Users\Perfi\Per\Doc\Prel_Img\Prel Imag 2013\Exemplu\Exemplu\obj\Debug\Exemplu.csproj.GenerateResource.Cache
+C:\Users\Perfi\Per\Doc\Prel_Img\Prel Imag 2013\Exemplu\Exemplu\obj\Debug\Exemplu.exe
+C:\Users\Perfi\Per\Doc\Prel_Img\Prel Imag 2013\Exemplu\Exemplu\obj\Debug\Exemplu.pdb
+C:\MyStuff\Work\Prelucrarea imaginilor\Exemplu\Exemplu\bin\Debug\Exemplu.exe
+C:\MyStuff\Work\Prelucrarea imaginilor\Exemplu\Exemplu\bin\Debug\Exemplu.pdb
+C:\MyStuff\Work\Prelucrarea imaginilor\Exemplu\Exemplu\obj\Debug\Exemplu.csprojResolveAssemblyReference.cache
+C:\MyStuff\Work\Prelucrarea imaginilor\Exemplu\Exemplu\obj\Debug\Exemplu.Properties.Resources.resources
+C:\MyStuff\Work\Prelucrarea imaginilor\Exemplu\Exemplu\obj\Debug\Exemplu.csproj.GenerateResource.Cache
+C:\MyStuff\Work\Prelucrarea imaginilor\Exemplu\Exemplu\obj\Debug\Exemplu.exe
+C:\MyStuff\Work\Prelucrarea imaginilor\Exemplu\Exemplu\obj\Debug\Exemplu.pdb
+C:\MyStuff\Work\Prelucrarea imaginilor\Exemplu\Exemplu\obj\Debug\Exemplu.Lab2.resources
