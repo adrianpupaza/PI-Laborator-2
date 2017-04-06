@@ -63,6 +63,7 @@
             this.yellowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.blueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.btnToLeft = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -326,6 +327,16 @@
             this.trackBar1.Visible = false;
             this.trackBar1.ValueChanged += new System.EventHandler(this.trackBar1_ValueChanged);
             // 
+            // btnToLeft
+            // 
+            this.btnToLeft.Location = new System.Drawing.Point(507, 380);
+            this.btnToLeft.Name = "btnToLeft";
+            this.btnToLeft.Size = new System.Drawing.Size(68, 20);
+            this.btnToLeft.TabIndex = 5;
+            this.btnToLeft.Text = "To left";
+            this.btnToLeft.UseVisualStyleBackColor = true;
+            this.btnToLeft.Click += new System.EventHandler(this.btnToLeft_Click);
+            // 
             // Lab2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -333,6 +344,7 @@
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(1157, 701);
             this.ContextMenuStrip = this.contextMenuStrip1;
+            this.Controls.Add(this.btnToLeft);
             this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pictureBox2);
@@ -387,6 +399,7 @@
         private System.Windows.Forms.ToolStripMenuItem redToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem yellowToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem blueToolStripMenuItem;
+        private System.Windows.Forms.Button btnToLeft;
     }
 }
 

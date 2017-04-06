@@ -132,6 +132,11 @@ namespace Exemplu
             pictureBox2.Image = _imgRight; pictureBox2.Refresh();
         }
 
+        private void btnToLeft_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Image = _imgRight; pictureBox1.Refresh();
+        }
+
         private void trackBar1_ValueChanged(object sender, EventArgs e)
         {
             _imgRight = new Bitmap(_imgLeft);
