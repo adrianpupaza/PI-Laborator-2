@@ -134,6 +134,7 @@ namespace Exemplu
 
         private void btnToLeft_Click(object sender, EventArgs e)
         {
+            _imgLeft = _imgRight;
             pictureBox1.Image = _imgRight; pictureBox1.Refresh();
         }
 
