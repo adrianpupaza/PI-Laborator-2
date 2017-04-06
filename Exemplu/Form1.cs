@@ -90,6 +90,48 @@ namespace Exemplu
             pictureBox2.Image = _imgRight; pictureBox2.Refresh();
         }
 
+        private void redToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _imgRight = new Bitmap(_imgLeft);
+            for (int i = 0; i < _imgRight.Height; i++)
+                for (int j = 0; j < _imgRight.Width; j++)
+                {
+                    Color c = _imgRight.GetPixel(j, i);
+                    int r = (int)(c.R * 1.5);
+                    if (r > 255) r = 255;
+                    _imgRight.SetPixel(j, i, Color.FromArgb(r, c.G / 2, c.B / 2));  // Swap (R,B)
+                }
+            pictureBox2.Image = _imgRight; pictureBox2.Refresh();
+        }
+
+        private void greenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _imgRight = new Bitmap(_imgLeft);
+            for (int i = 0; i < _imgRight.Height; i++)
+                for (int j = 0; j < _imgRight.Width; j++)
+                {
+                    Color c = _imgRight.GetPixel(j, i);
+                    int green = (int)(c.G * 1.5);
+                    if (green > 255) green = 255;
+                    _imgRight.SetPixel(j, i, Color.FromArgb(c.R / 2, green, c.B / 2));  // Swap (R,B)
+                }
+            pictureBox2.Image = _imgRight; pictureBox2.Refresh();
+        }
+
+        private void blueToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _imgRight = new Bitmap(_imgLeft);
+            for (int i = 0; i < _imgRight.Height; i++)
+                for (int j = 0; j < _imgRight.Width; j++)
+                {
+                    Color c = _imgRight.GetPixel(j, i);
+                    int blue = (int)(c.B * 1.5);
+                    if (blue > 255) blue = 255;
+                    _imgRight.SetPixel(j, i, Color.FromArgb(c.R / 2, c.G / 2, blue));  // Swap (R,B)
+                }
+            pictureBox2.Image = _imgRight; pictureBox2.Refresh();
+        }
+
         private void trackBar1_ValueChanged(object sender, EventArgs e)
         {
             _imgRight = new Bitmap(_imgLeft);
