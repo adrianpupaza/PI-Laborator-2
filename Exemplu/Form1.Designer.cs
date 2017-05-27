@@ -62,10 +62,14 @@
             this.redToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yellowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.blueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.btnToLeft = new System.Windows.Forms.Button();
             this.filtrareTCSiTBToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dilatareToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cSSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.conturToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.btnToLeft = new System.Windows.Forms.Button();
+            this.scheletizareToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.subtiereToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -272,7 +276,8 @@
             this.compresieDeContrastToolStripMenuItem,
             this.rGBToolStripMenuItem,
             this.filtrareTCSiTBToolStripMenuItem,
-            this.dilatareToolStripMenuItem});
+            this.dilatareToolStripMenuItem,
+            this.cSSToolStripMenuItem});
             this.editToolStripMenuItem1.Name = "editToolStripMenuItem1";
             this.editToolStripMenuItem1.Size = new System.Drawing.Size(39, 20);
             this.editToolStripMenuItem1.Text = "Edit";
@@ -322,6 +327,37 @@
             this.blueToolStripMenuItem.Text = "Blue";
             this.blueToolStripMenuItem.Click += new System.EventHandler(this.blueToolStripMenuItem_Click);
             // 
+            // filtrareTCSiTBToolStripMenuItem
+            // 
+            this.filtrareTCSiTBToolStripMenuItem.Name = "filtrareTCSiTBToolStripMenuItem";
+            this.filtrareTCSiTBToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.filtrareTCSiTBToolStripMenuItem.Text = "Filtrare TC si TB";
+            this.filtrareTCSiTBToolStripMenuItem.Click += new System.EventHandler(this.filtrareTCSiTBToolStripMenuItem_Click_1);
+            // 
+            // dilatareToolStripMenuItem
+            // 
+            this.dilatareToolStripMenuItem.Name = "dilatareToolStripMenuItem";
+            this.dilatareToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.dilatareToolStripMenuItem.Text = "Dilatare";
+            this.dilatareToolStripMenuItem.Click += new System.EventHandler(this.dilatareToolStripMenuItem_Click);
+            // 
+            // cSSToolStripMenuItem
+            // 
+            this.cSSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.conturToolStripMenuItem,
+            this.scheletizareToolStripMenuItem,
+            this.subtiereToolStripMenuItem});
+            this.cSSToolStripMenuItem.Name = "cSSToolStripMenuItem";
+            this.cSSToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.cSSToolStripMenuItem.Text = "CSS";
+            // 
+            // conturToolStripMenuItem
+            // 
+            this.conturToolStripMenuItem.Name = "conturToolStripMenuItem";
+            this.conturToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.conturToolStripMenuItem.Text = "Contur";
+            this.conturToolStripMenuItem.Click += new System.EventHandler(this.conturToolStripMenuItem_Click);
+            // 
             // trackBar1
             // 
             this.trackBar1.Location = new System.Drawing.Point(581, 41);
@@ -341,19 +377,19 @@
             this.btnToLeft.UseVisualStyleBackColor = true;
             this.btnToLeft.Click += new System.EventHandler(this.btnToLeft_Click);
             // 
-            // filtrareTCSiTBToolStripMenuItem
+            // scheletizareToolStripMenuItem
             // 
-            this.filtrareTCSiTBToolStripMenuItem.Name = "filtrareTCSiTBToolStripMenuItem";
-            this.filtrareTCSiTBToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
-            this.filtrareTCSiTBToolStripMenuItem.Text = "Filtrare TC si TB";
-            this.filtrareTCSiTBToolStripMenuItem.Click += new System.EventHandler(this.filtrareTCSiTBToolStripMenuItem_Click_1);
+            this.scheletizareToolStripMenuItem.Name = "scheletizareToolStripMenuItem";
+            this.scheletizareToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.scheletizareToolStripMenuItem.Text = "Scheletizare";
+            this.scheletizareToolStripMenuItem.Click += new System.EventHandler(this.scheletizareToolStripMenuItem_Click);
             // 
-            // dilatareToolStripMenuItem
+            // subtiereToolStripMenuItem
             // 
-            this.dilatareToolStripMenuItem.Name = "dilatareToolStripMenuItem";
-            this.dilatareToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
-            this.dilatareToolStripMenuItem.Text = "Dilatare";
-            this.dilatareToolStripMenuItem.Click += new System.EventHandler(this.dilatareToolStripMenuItem_Click);
+            this.subtiereToolStripMenuItem.Name = "subtiereToolStripMenuItem";
+            this.subtiereToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.subtiereToolStripMenuItem.Text = "Subtiere";
+            this.subtiereToolStripMenuItem.Click += new System.EventHandler(this.subtiereToolStripMenuItem_Click);
             // 
             // Lab2
             // 
@@ -420,6 +456,10 @@
         private System.Windows.Forms.Button btnToLeft;
         private System.Windows.Forms.ToolStripMenuItem filtrareTCSiTBToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dilatareToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cSSToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem conturToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem scheletizareToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem subtiereToolStripMenuItem;
     }
 }
 
