@@ -64,6 +64,8 @@
             this.blueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.btnToLeft = new System.Windows.Forms.Button();
+            this.filtrareTCSiTBToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dilatareToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -268,7 +270,9 @@
             this.editToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.contrastToolStripMenuItem,
             this.compresieDeContrastToolStripMenuItem,
-            this.rGBToolStripMenuItem});
+            this.rGBToolStripMenuItem,
+            this.filtrareTCSiTBToolStripMenuItem,
+            this.dilatareToolStripMenuItem});
             this.editToolStripMenuItem1.Name = "editToolStripMenuItem1";
             this.editToolStripMenuItem1.Size = new System.Drawing.Size(39, 20);
             this.editToolStripMenuItem1.Text = "Edit";
@@ -300,21 +304,21 @@
             // redToolStripMenuItem
             // 
             this.redToolStripMenuItem.Name = "redToolStripMenuItem";
-            this.redToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.redToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.redToolStripMenuItem.Text = "Red";
             this.redToolStripMenuItem.Click += new System.EventHandler(this.redToolStripMenuItem_Click);
             // 
             // yellowToolStripMenuItem
             // 
             this.yellowToolStripMenuItem.Name = "yellowToolStripMenuItem";
-            this.yellowToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.yellowToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.yellowToolStripMenuItem.Text = "Green";
             this.yellowToolStripMenuItem.Click += new System.EventHandler(this.greenToolStripMenuItem_Click);
             // 
             // blueToolStripMenuItem
             // 
             this.blueToolStripMenuItem.Name = "blueToolStripMenuItem";
-            this.blueToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.blueToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.blueToolStripMenuItem.Text = "Blue";
             this.blueToolStripMenuItem.Click += new System.EventHandler(this.blueToolStripMenuItem_Click);
             // 
@@ -336,6 +340,20 @@
             this.btnToLeft.Text = "To left";
             this.btnToLeft.UseVisualStyleBackColor = true;
             this.btnToLeft.Click += new System.EventHandler(this.btnToLeft_Click);
+            // 
+            // filtrareTCSiTBToolStripMenuItem
+            // 
+            this.filtrareTCSiTBToolStripMenuItem.Name = "filtrareTCSiTBToolStripMenuItem";
+            this.filtrareTCSiTBToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.filtrareTCSiTBToolStripMenuItem.Text = "Filtrare TC si TB";
+            this.filtrareTCSiTBToolStripMenuItem.Click += new System.EventHandler(this.filtrareTCSiTBToolStripMenuItem_Click_1);
+            // 
+            // dilatareToolStripMenuItem
+            // 
+            this.dilatareToolStripMenuItem.Name = "dilatareToolStripMenuItem";
+            this.dilatareToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.dilatareToolStripMenuItem.Text = "Dilatare";
+            this.dilatareToolStripMenuItem.Click += new System.EventHandler(this.dilatareToolStripMenuItem_Click);
             // 
             // Lab2
             // 
@@ -400,6 +418,8 @@
         private System.Windows.Forms.ToolStripMenuItem yellowToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem blueToolStripMenuItem;
         private System.Windows.Forms.Button btnToLeft;
+        private System.Windows.Forms.ToolStripMenuItem filtrareTCSiTBToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dilatareToolStripMenuItem;
     }
 }
 

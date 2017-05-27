@@ -138,6 +138,71 @@ namespace Exemplu
             pictureBox1.Image = _imgRight; pictureBox1.Refresh();
         }
 
+        private void filtrareTCSiTBToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            _imgRight = new Bitmap(_imgLeft);
+            for (int i = 1; i < _imgLeft.Height - 1; i++)
+                for (int j = 1; j < _imgLeft.Width - 1; j++)
+                {
+                    int red = 0, green = 0, blue = 0;
+                    for (int ii = -1; ii <= 1; ii++)
+                    {
+                        for (int jj = -1; jj <= 1; jj++)
+                        {
+                            int var;
+                            if (ii == 0 && jj == 0)
+                            {
+                                var = 9;
+                            }
+                            else
+                            {
+                                var = -1;
+                            }
+                            red += _imgLeft.GetPixel(j + jj, i + ii).R * var;
+                            green += _imgLeft.GetPixel(j + jj, i + ii).G * var;
+                            blue += _imgLeft.GetPixel(j + jj, i + ii).B * var;
+                        }
+                    }
+                    red = setInInterval(red);
+                    green = setInInterval(green);
+                    blue = setInInterval(blue);
+
+                    _imgRight.SetPixel(j, i, Color.FromArgb(red, green, blue));
+                }
+            pictureBox2.Image = _imgRight;
+            pictureBox2.Refresh();
+        }
+
+        private int setInInterval(int color)
+        {
+            if (color < 0)
+            {
+                color = 0;
+            }
+            else if (color > 255)
+            {
+                color = 255;
+            }
+
+            return color;
+        }
+
+        private void dilatareToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _imgRight = new Bitmap(_imgLeft);
+            const float f = 2f;
+            for (int i = 1; i < _imgRight.Width - 1; i++)
+            {
+                for (int j = 1; j < _imgRight.Height - 1; j++)
+                {
+                    int k = (int)((i - 1) / f) + 1; //+ _imgLeft.Width/2;
+                    int l = (int)((j - 1) / f) + 1; //+ _imgLeft.Height/2;
+                    _imgRight.SetPixel(i, j, _imgLeft.GetPixel(k, l));
+                }
+            }
+            pictureBox2.Image = _imgRight;
+        }
+
         private void trackBar1_ValueChanged(object sender, EventArgs e)
         {
             _imgRight = new Bitmap(_imgLeft);
