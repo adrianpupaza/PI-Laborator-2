@@ -22,11 +22,19 @@ namespace Exemplu
 
         private void openLeftToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            openFileDialog1.ShowDialog();
-            _loadedImage = Image.FromFile(openFileDialog1.FileName);
-            _imgLeft = new Bitmap(_loadedImage);
-            pictureBox1.Image = _imgLeft;
-            pictureBox1.Refresh();
+            try
+            {
+                openFileDialog1.ShowDialog();
+                _loadedImage = Image.FromFile(openFileDialog1.FileName);
+
+                _imgLeft = new Bitmap(_loadedImage);
+                pictureBox1.Image = _imgLeft;
+                pictureBox1.Refresh();
+            }
+            catch (Exception)
+            {
+                // ignored
+            }
         }
 
         private void saveRightToolStripMenuItem_Click(object sender, EventArgs e)
@@ -320,6 +328,12 @@ namespace Exemplu
                         s++;
                 }
             return s;
+        }
+
+        private void selectiveColorChangeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SelectiveColorChange form = new SelectiveColorChange();
+            form.Show();
         }
 
         private void trackBar1_ValueChanged(object sender, EventArgs e)

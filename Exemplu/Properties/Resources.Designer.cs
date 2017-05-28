@@ -63,6 +63,36 @@ namespace Exemplu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap imagePlaceholder {
+            get {
+                object obj = ResourceManager.GetObject("imagePlaceholder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imagePlaceholder1 {
+            get {
+                object obj = ResourceManager.GetObject("imagePlaceholder1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imagePlaceholder2 {
+            get {
+                object obj = ResourceManager.GetObject("imagePlaceholder2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Left {
             get {
                 object obj = ResourceManager.GetObject("Left", resourceCulture);

@@ -39,3 +39,4 @@ C:\MyStuff\Work\Prelucrarea imaginilor\Exemplu\Exemplu\bin\Debug\sv\ZedGraph.res
 C:\MyStuff\Work\Prelucrarea imaginilor\Exemplu\Exemplu\bin\Debug\tr\ZedGraph.resources.dll
 C:\MyStuff\Work\Prelucrarea imaginilor\Exemplu\Exemplu\bin\Debug\zh-cn\ZedGraph.resources.dll
 C:\MyStuff\Work\Prelucrarea imaginilor\Exemplu\Exemplu\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\MyStuff\Work\Prelucrarea imaginilor\Exemplu\Exemplu\obj\Debug\Exemplu.SelectiveColorChange.resources

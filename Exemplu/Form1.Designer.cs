@@ -31,8 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openLeftToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -66,40 +64,23 @@
             this.dilatareToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cSSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.conturToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.btnToLeft = new System.Windows.Forms.Button();
             this.scheletizareToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.subtiereToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.btnToLeft = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.selectiveColorChangeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Exemplu.Properties.Resources.Right;
-            this.pictureBox2.Location = new System.Drawing.Point(581, 107);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(422, 550);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Exemplu.Properties.Resources.Left;
-            this.pictureBox1.Location = new System.Drawing.Point(79, 109);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(422, 550);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // contextMenuStrip1
             // 
@@ -231,7 +212,8 @@
             this.menuStrip1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem1,
-            this.editToolStripMenuItem1});
+            this.editToolStripMenuItem1,
+            this.selectiveColorChangeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1157, 24);
@@ -354,9 +336,23 @@
             // conturToolStripMenuItem
             // 
             this.conturToolStripMenuItem.Name = "conturToolStripMenuItem";
-            this.conturToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.conturToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.conturToolStripMenuItem.Text = "Contur";
             this.conturToolStripMenuItem.Click += new System.EventHandler(this.conturToolStripMenuItem_Click);
+            // 
+            // scheletizareToolStripMenuItem
+            // 
+            this.scheletizareToolStripMenuItem.Name = "scheletizareToolStripMenuItem";
+            this.scheletizareToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.scheletizareToolStripMenuItem.Text = "Scheletizare";
+            this.scheletizareToolStripMenuItem.Click += new System.EventHandler(this.scheletizareToolStripMenuItem_Click);
+            // 
+            // subtiereToolStripMenuItem
+            // 
+            this.subtiereToolStripMenuItem.Name = "subtiereToolStripMenuItem";
+            this.subtiereToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.subtiereToolStripMenuItem.Text = "Subtiere";
+            this.subtiereToolStripMenuItem.Click += new System.EventHandler(this.subtiereToolStripMenuItem_Click);
             // 
             // trackBar1
             // 
@@ -377,19 +373,32 @@
             this.btnToLeft.UseVisualStyleBackColor = true;
             this.btnToLeft.Click += new System.EventHandler(this.btnToLeft_Click);
             // 
-            // scheletizareToolStripMenuItem
+            // pictureBox2
             // 
-            this.scheletizareToolStripMenuItem.Name = "scheletizareToolStripMenuItem";
-            this.scheletizareToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.scheletizareToolStripMenuItem.Text = "Scheletizare";
-            this.scheletizareToolStripMenuItem.Click += new System.EventHandler(this.scheletizareToolStripMenuItem_Click);
+            this.pictureBox2.Image = global::Exemplu.Properties.Resources.Right;
+            this.pictureBox2.Location = new System.Drawing.Point(581, 107);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(422, 550);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
             // 
-            // subtiereToolStripMenuItem
+            // pictureBox1
             // 
-            this.subtiereToolStripMenuItem.Name = "subtiereToolStripMenuItem";
-            this.subtiereToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.subtiereToolStripMenuItem.Text = "Subtiere";
-            this.subtiereToolStripMenuItem.Click += new System.EventHandler(this.subtiereToolStripMenuItem_Click);
+            this.pictureBox1.Image = global::Exemplu.Properties.Resources.Left;
+            this.pictureBox1.Location = new System.Drawing.Point(79, 109);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(422, 550);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // selectiveColorChangeToolStripMenuItem
+            // 
+            this.selectiveColorChangeToolStripMenuItem.Name = "selectiveColorChangeToolStripMenuItem";
+            this.selectiveColorChangeToolStripMenuItem.Size = new System.Drawing.Size(137, 20);
+            this.selectiveColorChangeToolStripMenuItem.Text = "Selective color change";
+            this.selectiveColorChangeToolStripMenuItem.Click += new System.EventHandler(this.selectiveColorChangeToolStripMenuItem_Click);
             // 
             // Lab2
             // 
@@ -406,12 +415,12 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Lab2";
             this.Text = "Laborator 2";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -460,6 +469,7 @@
         private System.Windows.Forms.ToolStripMenuItem conturToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem scheletizareToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem subtiereToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem selectiveColorChangeToolStripMenuItem;
     }
 }
 
