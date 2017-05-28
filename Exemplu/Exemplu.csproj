@@ -124,7 +124,16 @@
     <None Include="Resources\Right.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\colorChange.PNG" />
+    <Content Include="Resources\colorChange2.jpg" />
+    <Content Include="Resources\Dilatare.PNG" />
     <Content Include="Resources\imagePlaceholder.png" />
+    <Content Include="Resources\images %281%29.jpg" />
+    <Content Include="Resources\jerry2.jpg" />
+    <Content Include="Resources\mountain village.jpg" />
+    <Content Include="Resources\mountain village2.jpg" />
+    <Content Include="Resources\TS &amp; TB 2.PNG" />
+    <Content Include="Resources\TS &amp; TB.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
